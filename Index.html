@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valor do transporte</title>
+    <link rel="stylesheet" type="text/css" href="./APICSS.css" />
+    <script type="module" src="./APIjs.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=SUA_CHAVE=initMap"async defer></script>
+  </head>
+
+  <body>
+    <div class="busca">
+
+      <div class="autocompletecard">
+        <input id="origin" type="text" placeholder="Digite o ponto de partida" />
+        <input id="destination" type="text" placeholder="Digite o destino" />
+      </div>
+
+      <div class="imprime">
+        <p>Valor e distância</p>
+        <p id="preco"></p>
+        <p id="distancia"></p>
+      </div>
+
+      <div id="map"></div>
+    </div>
+  </body>
+
+</html>
